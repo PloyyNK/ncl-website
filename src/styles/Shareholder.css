@@ -1,0 +1,33 @@
+.sh-nav a{
+    background-color: var(--mainColor);
+    text-align: center;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.title-sh p{
+    font-size: 64px;
+}
+
+.line1 {
+    border-top: 2px solid var(--textColor);
+    width: 418px;
+    margin-bottom: 5rem;
+}
+
+.line2 {
+    border-top: 2px solid var(--textColor);
+    width: 418px;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .sh-nav {
+        display: grid;
+    }
+
+    .title-sh p{
+    font-size: 50px;
+}
+}

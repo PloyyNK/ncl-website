@@ -1,0 +1,65 @@
+#news-page-title {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.news-card-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.ncl-news {
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 500px;
+}
+
+.stock-clipping-news {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 7rem;
+}
+
+.clipping-news {
+    margin-left: 3rem;
+}
+
+.interview-ctn {
+    margin: 3rem 7rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .ncl-news {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .stock-clipping-news {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .stock-news {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .clipping-news {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .interview-ctn {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .vl {
+        display: none;
+    }
+}

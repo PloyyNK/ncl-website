@@ -1,0 +1,12 @@
+.service-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-left: 13rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .service-ctn {
+        margin-left: 1.2rem;
+    }
+}

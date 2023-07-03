@@ -1,0 +1,98 @@
+.business-ctn {
+    display: flex;
+}
+
+.b-bg {
+    background-image: url("https://d39eazhratf38c.cloudfront.net/Pictures/1024x536/0/8/1/60081_155787_29801.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 1007px;
+}
+
+.b-filter {
+    color: #eeeeee;
+    background-color: rgba(2, 13, 46, 0.48);
+    text-align: center;
+    padding: 10rem 5rem;
+}
+
+.b-text {
+    margin: 0 5rem;
+}
+
+.b-text #title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.more-btn button {
+    margin-top: 2rem;
+    padding: 0 3rem;
+    background-color: transparent;
+    color: #eeeeee;
+    border-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.service-card-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+
+.partners {
+    margin: 5rem;
+    color: var(--textColor);
+}
+
+.our-line {
+    display: flex;
+}
+
+.our-line p {
+    font-size: 20px;
+}
+
+.line {
+    border-bottom: solid 2px var(--textColor);
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+#partners-title {
+    font-size: 32px;
+    margin-bottom: 2rem;
+}
+
+.partners-logo {
+    margin-top: 2rem;
+}
+
+.partners-logo img {
+    margin: 2rem;
+    width: 225px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .business-ctn {
+        display: grid;
+    }
+
+    .b-bg {
+        background-position: center;
+        width: auto;
+    }
+
+    .service-card-ctn {
+        margin-left: 3rem;
+        margin-top: 2rem;
+
+    }
+
+    .b-text {
+        margin: 0 2rem;
+    }
+}

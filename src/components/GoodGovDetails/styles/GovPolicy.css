@@ -1,0 +1,53 @@
+.banner img{
+    width: 100%;
+    height: 259px;
+    object-fit: cover;
+    object-position: 50% 60%;
+}
+
+.asso img {
+    object-position: 50% 20%;
+}
+
+.charter img {
+    object-position: 50% 10%;
+}
+
+.risk img {
+    object-position: 50% 40%;
+}
+
+.corrupt img {
+    object-position: 50% 65%;
+}
+
+.ir img {
+    object-position: 50% 50%;
+}
+
+.gov-poli-ctn {
+    margin: 2rem 5rem;
+}
+
+.gov-poli-ctn ol {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.gov-poli-ctn ul {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.gov-poli-ctn h4 {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.risk-moreinfo {
+    margin-top: 3rem;
+}
+
+.gov-poli-ctn a:hover{
+    color: var(--secondaryColor);
+}

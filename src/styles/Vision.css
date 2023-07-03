@@ -1,0 +1,99 @@
+.vision-ctn {
+    margin: 3rem 15rem;
+    color: var(--textColor);
+}
+
+.vision-ctn img {
+    width: 400px;
+    object-fit: cover;
+}
+
+.vision {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.v-description {
+    padding: 3rem;
+}
+
+.v-description h3 {
+    text-align: center;
+}
+
+.v-description p {
+    font-size: 16px;
+}
+
+.mission {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+}
+
+.m-description {
+    padding: 3rem;
+}
+
+.m-description h3 {
+    text-align: center;
+}
+
+.goal {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+}
+
+.g-description {
+    padding: 3rem;
+}
+
+.g-description h3 {
+    text-align: center;
+}
+
+.strategy {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+}
+
+.s-description {
+    padding: 3rem;
+}
+
+.s-description h3 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .vision-ctn {
+        margin: 1rem;
+    }
+
+    .vision-ctn img{
+        width: 218px;
+        height: 130px;
+        margin-left: 4rem;
+    }
+
+    .vision {
+        display: grid;
+    }
+
+    .mission {
+        display: grid;
+        grid-auto-flow: dense;
+    }
+
+    .goal {
+        display: grid;
+    }
+
+    .strategy {
+        display: grid;
+    }
+}

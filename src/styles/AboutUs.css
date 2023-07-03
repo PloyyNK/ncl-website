@@ -1,0 +1,167 @@
+.about-us-ctn {
+    background-image: url(https://ulinkit.com/wp-content/uploads/2022/09/logi.jpg);
+    filter: brightness(1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.why-ctn {
+    background-image: url("https://img.freepik.com/premium-photo/transportation-logistics-container-cargo-ship-cargo-plane-3d-rendering-illustration_37416-200.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.w-filter {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.473);
+    text-align: center;
+    align-items: center;
+    padding: 5rem;
+    display: grid;
+    justify-content: center;
+}
+
+.w-title h1 {
+    font-size: 32px;
+}
+
+.underline-hl {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 3px;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+}
+
+.filter {
+    color: white;
+    background-color: rgba(2, 2, 2, 0.597);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.about-text {
+    margin: 5rem;
+    width: 314px
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.underline {
+    background-color: rgb(255, 255, 255);
+    width: 23px;
+    height: 3px;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+}
+
+.divider-vl {
+    border-right: 2px solid;
+    height: 300px;
+    width: 1px;
+    background-color: transparent;
+    margin: 2rem;
+}
+
+.map {
+    margin-top: 2rem;
+}
+
+.map img {
+    width: 722px;
+    filter: invert(100%);
+    margin-right: 4rem;
+}
+
+#subj {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.about-bit-ctn{
+    margin: 5rem;
+}
+
+.chair-letter {
+    margin: 5rem;
+}
+
+.chair-letter h5 {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.chair-letter p {
+    margin-bottom: 1.5rem;
+}
+
+.chair-letter hr {
+    margin-top: 4rem;
+}
+
+.board-team {
+    margin: 5rem;
+}
+
+.board-team button {
+    padding: 10px 2rem;
+    margin: 1rem 1rem 1rem 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--mainColor);
+}
+
+.board-team button:active {
+    color: var(--mainColor);
+    background-color: var(--textColor);
+}
+
+.board-team button:focus {
+    color: var(--mainColor);
+    background-color: var(--textColor);
+}
+
+@media only screen and (max-width: 1024px) {
+    .divider {
+        visibility: hidden;
+    }
+
+    .about-text {
+        margin: 2rem;
+    }
+
+    .history-ctn {
+        margin: 2rem;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .divider-vl {
+        display: none;
+    }
+
+    .title {
+        margin-left: 2rem;
+    }
+    
+    .underline {
+        margin-left: 2rem;
+    }
+
+    .chair-letter {
+        margin: 5rem 1.5rem;
+    }
+}

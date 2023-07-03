@@ -1,0 +1,141 @@
+.ir-ctn {
+    display: flex;
+}
+
+.chart-btn {
+    margin: 2rem;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
+.btn button:focus {
+    background-color: var(--textColor);
+    color: var(--mainColor);
+}
+
+.btn button {
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    border: none;
+    margin-right: 1rem;
+    padding: 10px 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.news-alert-ctn {
+    margin: 2rem;
+}
+
+.news-link {
+    display: flex;
+    margin: 1rem 0;
+    background-color: #D9D9D9;
+    padding: 5px 2rem;
+    border-radius: 10px;
+}
+
+.news-link p {
+    margin-right: 1rem;
+}
+
+.news-link a{
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+.news-link a:hover {
+    color: var(--secondaryColor);
+}
+
+.news-alert a {
+    color: var(--textColor);
+}
+
+.calendar-ctn {
+    background-image: url('https://i.pinimg.com/originals/7c/1d/af/7c1daf5d1bd7ab237a2bb5f75a556ed8.jpg');
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+}
+
+.calendar-ctn h1 {
+    color: #000;
+}
+
+.more-info h4 {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.more-info {
+    margin: 2rem;
+}
+
+.more-info-nav {
+    display: flex;
+}
+
+.more-info-nav a {
+    background-color: var(--mainColor);
+    margin-right: 1rem;
+    padding: 6px 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.more-info-nav a:hover {
+    color: var(--mainColor);
+    background-color: var(--textColor);
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+}
+
+.modal-content h2 {
+    text-decoration: underline;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .ir-ctn {
+        display: grid;
+    }
+
+    .chart {
+        display: none;
+    }
+
+    .more-info-nav {
+        display: grid;
+    }
+}

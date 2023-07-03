@@ -1,0 +1,80 @@
+.gg-ctn {
+  margin: 2rem 3rem;
+  width: 50%;
+}
+
+.goodgov-nav {
+    display: grid;
+    justify-content: left;
+    background-color: #29335c;
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+    padding: 3rem;
+}
+
+.goodgov-nav button {
+    padding: 1rem;
+    font-size: 14px;
+    margin: 5px 10rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 415px;
+    background-color: var(--mainColor);
+}
+
+.goodgov-nav button:active {
+  transform: translateY(2px);
+}
+
+.goodgov-nav button:hover {
+  color: var(--mainColor);
+  background-color: var(--textColor);
+}
+
+.goodgov-nav button:nth-child(even) {
+    background-color: var(-mainCorlorLight);
+}
+
+.photo-decor {
+  position: absolute;
+  display: flex;
+  right: 5%;
+}
+
+.photo-decor .decor1 img {
+  margin-top: 10px;
+}
+
+.photo-decor .decor2 img {
+  margin-top: -10rem;
+}
+
+.photo-decor img {
+  width: 265px;
+  height: 547px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 0;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .gg-ctn {
+    width: auto;
+  }
+  .goodgov-nav {
+    padding: 0;
+    background-image: url("https://i.pinimg.com/originals/4d/79/91/4d79915c605bc872c5b65e818ecae46d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .goodgov-nav button {
+    margin: 15px 5rem;
+    width: auto;
+  }
+
+  .photo-decor {
+    display: none;
+  }
+}

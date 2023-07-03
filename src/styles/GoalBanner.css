@@ -1,0 +1,16 @@
+.goal-banner-ctn {
+    background-color: #222C59;
+    color: aliceblue;
+    text-align: center;
+    padding: 10rem;
+}
+
+.goal-description {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .goal-banner-ctn {
+        padding: 2rem;
+    }
+}

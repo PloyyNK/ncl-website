@@ -1,0 +1,31 @@
+.intro-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.intro-description {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 13rem;
+}
+
+.intro-content {
+    flex-basis: 33%;
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro-content {
+        flex-basis: 100%;
+    }
+
+    .intro-description {
+        margin-left: 0;
+    }
+}
