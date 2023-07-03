@@ -5,7 +5,7 @@ export default function ContactForm() {
         <>
             <div className='contact-ctn'>
                 <h1 className='mb-10 font-bold'>Let's get in touch!</h1>
-                <form className='grid'>
+                <form className='grid form-con'>
                     <div className='flex'>
                         <div>
                             <label>Name</label>
