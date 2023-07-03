@@ -1,0 +1,54 @@
+.snap-content select {
+    border-bottom: 2px solid var(--textColor);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.sheet-content {
+    margin-top: 2rem;
+}
+
+.sheet-table table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+
+.sheet-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.sheet-table td table {
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+.sheet-table td table td {
+    padding: 4px;
+    border: none;
+}
+
+.sheet-table td a {
+    text-decoration: none;
+}
+
+.sheet-table td a:hover {
+    text-decoration: underline;
+}
+
+.main-table>tbody>tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.main-table td,
+.main-table th {
+    border: none;
+    padding: 8px;
+}
+
+.divide-content p {
+    margin: 15px;
+}

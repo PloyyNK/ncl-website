@@ -1,7 +1,7 @@
 import NavBar from '../components/Navbar'
 import Footer from '../components/Footer'
 import '../styles/Business.css'
-import IntroCard from "../components/Cards/IntroCard";
+import IntroCard from "../components/IntroCard";
 import icon1 from "../images/ship-icon.png"
 import icon2 from "../images/air-icon.png"
 import icon3 from "../images/truck-icon.png"

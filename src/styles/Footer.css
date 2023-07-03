@@ -30,6 +30,11 @@
 
 .footer-nav a{
     margin-bottom: 2rem;
+    text-decoration: underline;
+}
+
+.footer-nav a:hover {
+    color: var(--secondaryColor);
 }
 
 .footer-nav a:visited{

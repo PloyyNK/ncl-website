@@ -43,10 +43,15 @@ export default function GoodGovernanceDetail() {
         <>
             <Navbar />
             <div>
-                {GoodGovData.filter((data) => data.category === category).map((filterData) => {
-                    const component = renderComponent(filterData.category);
-                    return component ? React.createElement('div', { key: filterData.category }, component) : null;
-                })}
+                {
+                    GoodGovData.filter((data) =>
+                        data.category === category
+                    )
+                        .map((filterData) => {
+                            const component = renderComponent(filterData.category);
+                            return component ? React.createElement('div', { key: filterData.category }, component) : null;
+                        })
+                }
             </div>
             <Footer />
         </>

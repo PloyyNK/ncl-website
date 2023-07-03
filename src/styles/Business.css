@@ -69,11 +69,13 @@
 
 .partners-logo {
     margin-top: 2rem;
+    display: flex;
 }
 
 .partners-logo img {
     margin: 2rem;
     width: 225px;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 1024px) {

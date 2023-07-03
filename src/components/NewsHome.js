@@ -1,5 +1,5 @@
 import '../styles/NewsHome.css'
-import NewsCard from './Cards/NewsCard'
+import NewsCard from './NewsCard'
 
 export default function NewsHome() {
     return (

@@ -1,8 +1,24 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import '../styles/Shareholder.css'
+import { useNavigate } from "react-router";
 
 export default function Shareholder() {
+
+    const navigate = useNavigate()
+
+    const navigateComSnap = () => {
+        navigate('/investor-relation-ncl/shareholder-information/company-snapshot')
+    }
+
+    const navigateFact = () => {
+        navigate('/investor-relation-ncl/shareholder-information/fact-sheet')
+    }
+
+    const navigatePayment = () => {
+        navigate('/investor-relation-ncl/shareholder-information/dividen-payment-policy')
+    }
+
     return (
         <>
             <Navbar />
@@ -18,12 +34,12 @@ export default function Shareholder() {
                 </div>
                 <div className="flex justify-center items-center">
                     <div className="grid grid-cols-3 gap-4 sh-nav mb-10 ml-5 mr-5">
-                        <a href="#">Company Snapshot</a>
-                        <a href="#">Fact Sheet</a>
-                        <a href="#">Major Shareholder</a>
-                        <a href="#">Annual General Meeting (AGM)</a>
-                        <a href="#">Extraordinary General Meeting (EGM)</a>
-                        <a href="#">Dividend Payment Policy</a>
+                        <a onClick={navigateComSnap}>Company Snapshot</a>
+                        <a onClick={navigateFact}>Fact Sheet</a>
+                        <a href="https://www.nclthailand.com/investor_38.html">Major Shareholder</a>
+                        <a href="https://www.nclthailand.com/investor_39.html">Annual General Meeting (AGM)</a>
+                        <a href="https://www.nclthailand.com/investor_50.html">Extraordinary General Meeting (EGM)</a>
+                        <a onClick={navigatePayment}>Dividend Payment Policy</a>
                     </div>
                 </div>
 

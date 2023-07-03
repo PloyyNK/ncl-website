@@ -33,8 +33,8 @@ export default function GoodGovernance() {
             <Transitions>
                 <NavBar />
                 <div className='gg-ctn'>
-                    <h1 id='gg-h1'>Good Governance</h1>
-                    <h3>Independent Director</h3>
+                    <h1 id='gg-h1' className='font-bold text-3xl'>Good Governance</h1>
+                    <h3 className='font-semibold mt-5 text-xl'>Independent Director</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nunc non felis vulputate, lobortis ante id, tristique ex.
                         Nunc augue ligula, posuere at magna et, lobortis

@@ -1,5 +1,9 @@
 .goal-banner-ctn {
     background-color: #222C59;
+    background-image: url('https://i.imgur.com/aSOABzO.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: aliceblue;
     text-align: center;
     padding: 10rem;

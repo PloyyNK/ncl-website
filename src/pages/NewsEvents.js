@@ -1,6 +1,6 @@
 import NavBar from '../components/Navbar'
 import Footer from '../components/Footer'
-import NewsCard from '../components/Cards/NewsCard'
+import NewsCard from '../components/NewsCard'
 import '../styles/NewsEvents.css'
 import BackgroundSlider from '../components/BackgroundSlider'
 import NewsClipping from '../components/NewsClipping'

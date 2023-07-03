@@ -6,6 +6,11 @@
     cursor: pointer;
 }
 
+.sh-nav a:hover {
+    background-color: var(--textColor);
+    color: var(--mainColor);
+}
+
 .title-sh p{
     font-size: 64px;
 }

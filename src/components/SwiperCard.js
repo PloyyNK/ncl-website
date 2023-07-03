@@ -2,7 +2,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import directorsData from '../data/director-data';
 import managementData from '../data/management-data';
-import TeamCard from './Cards/TeamCard';
+import TeamCard from './TeamCard';
 import '../styles/SwiperCard.css'
 
 import 'swiper/css';
