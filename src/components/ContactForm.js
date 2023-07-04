@@ -4,7 +4,7 @@ export default function ContactForm() {
     return (
         <>
             <div className='contact-ctn'>
-                <h1 className='mb-10 font-bold'>Let's get in touch!</h1>
+                <h1 className='mb-10 font-bold text-xl'>Contact Us</h1>
                 <form className='grid form-con'>
                     <div className='flex'>
                         <div>
@@ -19,7 +19,7 @@ export default function ContactForm() {
                             <textarea className='text-area mt-0' placeholder='Enter your message here...'></textarea>
                         </div>
                     </div>
-                    <buttton>Send</buttton>
+                    <button>Send</button>
                 </form>
             </div>
         </>
