@@ -10,14 +10,6 @@ import Charter from '../components/GoodGovDetails/Charter';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const componentMapping = {
-    GovPolicy,
-    CorruptPolicy,
-    Risk,
-    Asso,
-    Charter
-};
-
 export default function GoodGovernanceDetail() {
 
     const { category } = useParams();

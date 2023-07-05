@@ -1,0 +1,70 @@
+.history-ctn {
+    margin: 5rem;
+}
+
+.timeline-ctn {
+    margin: 2rem;
+}
+
+.btn-ctn button {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--textColor);
+    color: var(--mainColor);
+}
+
+.year1-info {
+    margin: 1rem;
+    display: none;
+    transition: 0.5s;
+}
+
+.year1:hover + .year1-info {
+    display: block;
+}
+
+.btn-ctn button:hover {
+    font-size: 24px;
+    transition: 0.5s;
+} 
+
+.year2-info {
+    margin: 1rem;
+    display: none;
+    transition: 0.5s;
+}
+
+.year2:hover + .year2-info {
+    display: block;
+    transition: 0.5s;
+}
+
+.year3-info {
+    margin: 1rem;
+    display: none;
+    transition: 0.5s;
+}
+
+.year3:hover + .year3-info{
+    display: block;
+}
+
+.year4-info {
+    margin: 1rem;
+    display: none;
+    transition: 0.5s;
+}
+
+.year4:hover + .year4-info{
+    display: block;
+}
+
+.year5-info {
+    margin: 1rem;
+    display: none;
+    transition: 0.5s;
+}
+
+.year5:hover + .year5-info{
+    display: block;
+}

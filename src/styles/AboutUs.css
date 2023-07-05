@@ -1,8 +1,13 @@
-.about-us-ctn {
-    background-image: url(https://ulinkit.com/wp-content/uploads/2022/09/logi.jpg);
-    filter: brightness(1);
-    background-repeat: no-repeat;
-    background-size: cover;
+.about-us-ctn img {
+    height: 442px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 40% 10%;
+    filter: brightness(0.8);
+}
+
+.temp button{
+    margin-left: 2rem;
 }
 
 .why-ctn {
@@ -41,54 +46,6 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem 0;
-}
-
-.about-text {
-    margin: 5rem;
-    width: 314px
-}
-
-.title {
-    font-size: 24px;
-    font-weight: bolder;
-}
-
-.underline {
-    background-color: rgb(255, 255, 255);
-    width: 23px;
-    height: 3px;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-}
-
-.divider-vl {
-    border-right: 2px solid;
-    height: 300px;
-    width: 1px;
-    background-color: transparent;
-    margin: 2rem;
-}
-
-.map {
-    margin-top: 2rem;
-}
-
-.map img {
-    width: 722px;
-    filter: invert(100%);
-    margin-right: 4rem;
-}
-
-#subj {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bolder;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-}
-
-.about-bit-ctn{
-    margin: 5rem;
 }
 
 .chair-letter {

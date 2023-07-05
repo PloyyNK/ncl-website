@@ -40,13 +40,13 @@ export default function CorpSocRes() {
                 </div>
                 <div className='corp-com-ctn'>
                     {
-                        CorpData.filter((data) => 
+                        CorpData.filter((data) =>
                             data.name === component
                         )
-                        .map((filterredData) => {
-                            const render = renderComponent(filterredData.name)
-                            return render ? React.createElement('div', {key: filterredData.name}, render) : null
-                        })
+                            .map((filterredData) => {
+                                const render = renderComponent(filterredData.name)
+                                return render ? React.createElement('div', { key: filterredData.name }, render) : null
+                            })
                     }
                 </div>
                 <Footer />

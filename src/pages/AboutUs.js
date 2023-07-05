@@ -4,83 +4,59 @@ import Transitions from '../components/Transition'
 import '../styles/AboutUs.css'
 import Vision from '../components/Vision'
 import SwiperCard from '../components/SwiperCard'
-import { useState } from 'react'
+import React, { useState } from 'react'
+import History from '../components/AboutDetails/History'
+import TimelineCom from '../components/AboutDetails/Timeline'
+import Structure from '../components/AboutDetails/Structure'
 
 export default function AboutUs() {
 
     const [board, setBoard] = useState("director")
+    const [about, setAbout] = useState("history")
 
-    const handleOnClick = (newBoard) => {
+    const aboutComponent = ['history', 'structure', 'timeline']
+
+    const handleOnClickBoard = (newBoard) => {
         setBoard(newBoard);
     };
+
+    const renderComponent = (name) => {
+        switch (name) {
+            case 'history':
+                return React.createElement(History, null)
+            case 'timeline':
+                return React.createElement(TimelineCom, null)
+            case 'structure':
+                return React.createElement(Structure, null)
+            default:
+                return React.createFactory(null)
+        }
+    }
 
     return (
         <>
             <Transitions>
                 <NavBar />
                 <div className='about-us-ctn'>
-                    <div className='filter'>
-                        <div className='about-text'>
-                            <div className='title'>
-                                <strong>COMPANY HISTORY</strong>
-                            </div>
-                            <div className='underline'></div>
-                            <div className='history-ctn'>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Nunc non felis vulputate, lobortis ante id, tristique ex.
-                                Nunc augue ligula, posuere at magna et, lobortis finibus tortor.
-                                In sed lorem nec odio tristique viverra. Etiam libero ex,
-                                pharetra vitae consequat ut, lobortis nec tortor. Duis a finibus
-                                ligula, a euismod ex. Sed condimentum eros nec quam dignissim finibus.
-                                Proin pharetra lacus aliquam mi placerat aliquam. Aenean
-                                at ligula lobortis</p>
-                            </div>
-                        </div>
-                        <div className='divider-vl'></div>
-                        <div className='map'>
-                            <img src='https://static.vecteezy.com/system/resources/previews/001/198/030/original/world-map-png.png' />
-                        </div>
-                    </div>
-
+                    <img src='https://ulinkit.com/wp-content/uploads/2022/09/logi.jpg' />
                 </div>
-                <div className='about-bit-ctn'>
-                    <h1 id='subj'><strong>A Little Bit About Us</strong></h1>
-                    <p>
-                        NCL International Logistics Public Company Limited (“Company” or “NCL”) is a logistics provider.
-                        Established by Mr. Kitti Phuathavornskul, NCL International Logistics PCL Group was aimed to
-                        engage in international freight forwarding services.  This Group was comprised of
-                        NCL International Logistics Public Company Limited (formerly known as “Regional First Jubilee Co., Ltd.),
-                        founded in 1994; VP International Logistics (Thailand) Co., Ltd. (VP); and Unitrans Global Co., Limited (UNI).
-                    </p>
-                    <br></br>
-                    <p>
-                        To restructure the management within the Group and eliminate potential conflicts of interest,
-                        VP ceased its operation in 2009 and in 2011, staff who founded UNI sold UNI shares to
-                        Mr. Phuathavornskul, the Company’s major shareholder. Later, Mr. Phuathavornskul sold
-                        all UNI shares to external parties; however, UNI still utilized the Company’s buildings
-                        for its business operations and relied on the Company in terms of documentation and accounting
-                        and financial management. Presently, VP and UNI have ceased their business; they notified
-                        the Department of Revenue of their business termination in July 2012, and they are now awaiting
-                        liquidation. Accordingly, the only operating company is NCL International Logistics Co., Ltd. (“the Company” or “NCL”).
-                    </p>
-                    <br></br>
-                    <p>
-                        Since its inception, the Company has grown steadily and has been able to provide
-                        both LCL and FCL services and has acted as a customs broker and goods issuance agent.
-                        Growing continuously in the international freight forwarding business, in 2011,
-                        the Company invested in domestic freight forwarding services by purchasing tractor heads
-                        and trailer trucks to ensure service continuity.  The first route established was
-                        the southern route and expanded to the East and Bangkok.
-                    </p>
-                    <br></br>
-                    <p>
-                        The company had been converted from “Company Limited” to Public Company Limited”
-                        and Registered in the Market of Alternative Investment (Mai) on November 11, 2014.
-                        Being well-established for over 20 years, it presently has a registered capital
-                        of 113.53 million baht which comprises 454.15 million ordinary sharesand paid up
-                        registered capital of 113.53 million baht with a par value of 0.25 baht per share.
-                    </p>
-                    <br></br>
+
+                <div className='temp'>
+                    <button onClick={() => setAbout("structure")}>Structure</button>
+                    <button onClick={() => setAbout("history")}>History</button>
+                    <button onClick={() => setAbout("timeline")}>Timeline</button>
+                </div>
+
+                <div>
+                    {
+                        aboutComponent.filter((data) =>
+                            data === about
+                        )
+                            .map((filterredData) => {
+                                const render = renderComponent(filterredData)
+                                return render ? React.createElement('div', { key: filterredData }, render) : null
+                            })
+                    }
                 </div>
 
                 <div className='why-ctn'>
@@ -98,9 +74,9 @@ export default function AboutUs() {
                 <Vision />
 
                 <div className='board-team'>
-                    <h1>Meet Our NCL Thailand Team</h1>
-                    <button onClick={() => handleOnClick("director")}>Board of Directors</button>
-                    <button onClick={() => handleOnClick("management")}>Board of Management</button>
+                    <h1 className='font-bold'>Meet Our NCL Thailand Team</h1>
+                    <button onClick={() => handleOnClickBoard("director")}>Board of Directors</button>
+                    <button onClick={() => handleOnClickBoard("management")}>Board of Management</button>
                     <SwiperCard board={board} />
                 </div>
 

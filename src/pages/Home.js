@@ -24,7 +24,6 @@ export default function Home() {
                     <ContactForm />
                     <Subscribe />
                 </div>
-
                 <Footer />
             </Transitions>
         </>
