@@ -8,6 +8,7 @@ import imageSlider from "../data/bgSlider-data";
 import Transitions from '../components/Transition'
 import ContactForm from "../components/ContactForm";
 import PhotoCard from "../components/PhotoCard";
+import Subscribe from "../components/Subscribe";
 
 export default function Home() {
     return (
@@ -19,7 +20,11 @@ export default function Home() {
                 <PhotoCard />
                 <GoalBanner />
                 <NewsHome />
-                <ContactForm />
+                <div className="contact-sub">
+                    <ContactForm />
+                    <Subscribe />
+                </div>
+
                 <Footer />
             </Transitions>
         </>

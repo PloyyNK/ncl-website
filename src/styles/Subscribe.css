@@ -1,0 +1,63 @@
+.contact-sub {
+    display: flex;
+    margin: 2rem;
+    border-radius: 37px;
+    box-shadow: -19px -19px 38px #929292,
+        19px 19px 38px #ffffff;
+    padding: 2rem;
+}
+
+.sub-flex {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-left: #92929238 2px solid;
+    padding: 2rem;
+}
+
+.sub-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail {
+    margin-top: 1rem;
+    border-bottom: 2px solid var(--mainColor);
+}
+
+.mail:hover {
+    border-bottom: 2px solid var(--textColor);
+    transition: 1s;
+}
+
+
+.sub-mail input {
+    text-align: left;
+    width: auto;
+    padding: 10px;
+}
+
+.icon {
+    padding: 10px;
+    margin-right: 10px;
+    color: var(--textColor);
+    min-width: 50px;
+    border-right: 2px solid #9292923b;
+    margin-bottom: 10px;
+}
+
+.sub-mail input:hover {
+    font-size: large;
+    transition: 0.5s;
+}
+
+.sub-mail input:focus {
+    font-size: large;
+    transition: 0.5s;
+}
+
+.mail button {
+    margin-left: 10px;
+}

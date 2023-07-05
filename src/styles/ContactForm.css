@@ -1,12 +1,16 @@
 .contact-ctn {
-    margin: 3rem;
     display: grid;
     width: max-content;
+}
+
+.form-ctn {
+    display: flex;
 }
 
 .contact-ctn input {
     border-bottom: 2px solid var(--mainColor);
     display: grid;
+    margin-bottom: 10px;
 }
 
 .contact-ctn input:hover {
@@ -14,9 +18,13 @@
     transition: 0.5s;
 }
 
+.text-area {
+    margin-left: 2rem;
+}
+
 .text-area textarea {
     font-size: 13px;
-    padding: 1rem;
+    padding: 10px;
     border: #929292 2px solid;
 }
 
@@ -28,11 +36,25 @@
     border-radius: 10px;
 }
 
+.contact-ctn button:hover {
+    border: 2px solid var(--mainColorLight);
+    padding: 15px 2rem;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
 .form-con {
     display: grid;
-    padding: 5rem;
+    padding: 3rem;
     width: max-content;
-    border-radius: 37px;
-    box-shadow: -19px -19px 38px #929292,
-        19px 19px 38px #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .form-ctn {
+        display: grid;
+    }
+
+    .text-area {
+        margin-left: 0;
+    }
 }
