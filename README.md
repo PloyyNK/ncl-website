@@ -6,7 +6,7 @@ This project is made for NCL International Logistics Public Company Limited.
 
 ``` git clone https://github.com/PloyyNK/ncl-website.git ```
 
-1. After you have this project on your local machine, run the open new terminal and run the following command line:
+1. After you have this project on your local machine, open new terminal and run the following command line:
 
 ```cd [your path to this project] ```
 
