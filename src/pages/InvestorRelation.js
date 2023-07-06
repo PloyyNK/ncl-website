@@ -5,18 +5,32 @@ import irNews from '../data/irNews-data'
 import '../styles/InvestorRelation.css'
 import { Chart } from '../components/VerticalChart'
 import { useState } from 'react'
-import InfoIR from '../components/InfoIR'
 import { useNavigate } from 'react-router'
 
 export default function InvestorRelation() {
 
     const navigate = useNavigate()
+    const [modal, setModal] = useState(false)
 
     const navigateShareholder = () => {
         navigate('/investor-relation-ncl/shareholder-information')
     }
 
-    const [modal, setModal] = useState(false)
+    const navigateCalendar = () => {
+        navigate('/investor-relation-ncl/ir-calendar')
+    }
+
+    const navigateAnnual = () => {
+        window.location.href = ('https://www.nclthailand.com/investor-report_42.html')
+    }
+
+    const navigateComProfile = () => {
+        window.location.href = ('https://www.nclthailand.com/uploads/articles_attc/1149_1686023807_contentAtt_en.pdf')
+    }
+
+    const navigateAnalyst = () => {
+        window.location.href = ('https://www.nclthailand.com/investor_44.html')
+    }
 
     const toggleModal = () => {
         setModal(!modal);
@@ -31,15 +45,12 @@ export default function InvestorRelation() {
     return (
         <Transitions>
             <NavBar />
-            {/* <div className='banner ir'>
-                <img src='https://cdn.wallpapersafari.com/18/20/5XL4Ud.jpg' />
-            </div> */}
             <div className='ir-ctn'>
                 <div className='ir-btn'>
                     <button>financial highlight</button>
                     <button>financial statement</button>
                     <button>management discussion and analysis</button>
-                    <button>IR Calendar</button>
+                    <button onClick={navigateCalendar}>IR Calendar</button>
                 </div>
                 {/* <div className='chart-btn'>
                         <div className='btn'>
@@ -67,12 +78,8 @@ export default function InvestorRelation() {
                     </div>
                 </div>
             </div>
-            {/* <div className='calendar-ctn'>
-                <Calendar />
-            </div> */}
             <div className='more-info'>
                 <h4 className='font-bold text-center text-3xl more-info-title'>More Information</h4>
-                {/* <InfoIR /> */}
                 <div className='more-nav'>
                     <button onClick={navigateShareholder}>Shareholder Information</button>
                     <button onClick={toggleModal}>IR Contact</button>
@@ -107,9 +114,9 @@ export default function InvestorRelation() {
                             </div>
                         </div>
                     )}
-                    <button>Annual Report</button>
-                    <button>Our Profile</button>
-                    <button>Analysis Report</button>
+                    <button onClick={navigateAnnual}>Annual Report</button>
+                    <button onClick={navigateComProfile}>Our Profile</button>
+                    <button onClick={navigateAnalyst}>Analysis Report</button>
                 </div>
             </div>
             <Footer />

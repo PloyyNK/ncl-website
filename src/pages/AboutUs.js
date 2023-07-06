@@ -41,7 +41,7 @@ export default function AboutUs() {
                     <img src='https://ulinkit.com/wp-content/uploads/2022/09/logi.jpg' />
                 </div>
 
-                <div className='temp'>
+                <div className='nav-about'>
                     <button onClick={() => setAbout("structure")}>Structure</button>
                     <button onClick={() => setAbout("history")}>History</button>
                     <button onClick={() => setAbout("timeline")}>Timeline</button>

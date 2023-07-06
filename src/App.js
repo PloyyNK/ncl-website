@@ -18,6 +18,7 @@ import NewsDetail from './pages/NewsDetail';
 import GoodGovernanceDetail from './pages/GoodGovernanceDetail';
 import Shareholder from './pages/Shareholder';
 import ShareholderDetails from './pages/ShareholderDatails';
+import IRCalendar from './pages/IRCalendar';
 
 const Animated = () => {
   const location = useLocation();
@@ -29,6 +30,7 @@ const Animated = () => {
       <Route path='/good-governance-ncl' element={<GoodGovernance />} />
       <Route path='/good-governance-ncl/:category' element={<GoodGovernanceDetail />} />
       <Route path='/investor-relation-ncl' element={<InvestorRelation />} />
+      <Route path='/investor-relation-ncl/ir-calendar' element={<IRCalendar />} />
       <Route path='/news-events-ncl' element={<NewsEvents />} />
       <Route path='/news-events-ncl/:category/:id' element={<NewsDetail />} />
       <Route path='/corperate-social-responsibility' element={<CorpSocRes />} />
@@ -50,6 +52,7 @@ function App() {
         <Route path='/good-governance-ncl' element={<GoodGovernance />} />
         <Route path='/good-governance-ncl/:category' element={<GoodGovernanceDetail />} />
         <Route path='/investor-relation-ncl' element={<InvestorRelation />} />
+        <Route path='/investor-relation-ncl/ir-calendar' element={<IRCalendar />} />
         <Route path='/investor-relation-ncl/shareholder-information' element={<Shareholder />} />
         <Route path='/investor-relation-ncl/shareholder-information/:name' element={<ShareholderDetails />} />
         <Route path='/news-events-ncl' element={<NewsEvents />} />
