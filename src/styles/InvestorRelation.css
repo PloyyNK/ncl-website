@@ -41,7 +41,7 @@
     margin-right: 1rem;
 }
 
-.news-link a{
+.news-link a {
     color: var(--textColor);
     text-decoration: none;
 }
@@ -65,19 +65,6 @@
     color: #000;
 }
 
-.more-info h4 {
-    text-decoration: underline;
-    font-size: 20px;
-}
-
-.more-info {
-    margin: 2rem;
-}
-
-.more-info-nav {
-    display: flex;
-}
-
 .more-info-nav a {
     background-color: var(--mainColor);
     margin-right: 1rem;
@@ -91,7 +78,8 @@
     background-color: var(--textColor);
 }
 
-.modal, .overlay {
+.modal,
+.overlay {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -102,8 +90,9 @@
 }
 
 .overlay {
-    background: rgba(49,49,49,0.8);
+    background: rgba(49, 49, 49, 0.8);
 }
+
 .modal-content {
     position: absolute;
     top: 40%;
@@ -120,6 +109,7 @@
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    cursor: pointer;
 }
 
 .modal-content h2 {
@@ -131,13 +121,100 @@
     margin-right: 1rem;
 }
 
+.ir-btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin: 3rem;
+}
+
+.ir-btn button {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+    background-color: #D9D9D9;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+
+.ir-btn button:hover {
+    margin-bottom: 0;
+    transition: 0.5s;
+}
+
+.ir-btn button:nth-of-type(1) {
+    background-image: url(https://t4.ftcdn.net/jpg/02/03/66/93/360_F_203669387_m7IvXlkV0FQwA69Xpt8AwlAdO5Ih05Mc.jpg);
+}
+
+.ir-btn button:nth-of-type(2) {
+    background-image: url(https://media.istockphoto.com/id/533272455/photo/graphs.jpg?s=612x612&w=0&k=20&c=WBlc_-D-hfcO78L-10TSdUa0lrNDo5eVLOwluL43B1g=);
+    color: var(--textColor);
+}
+
+.ir-btn button:nth-of-type(3) {
+    background-image: url(https://www.ingress.co.th/themes/default/assets/static/images/default/ir/financial-info/mdna.jpg);
+    color: var(--textColor);
+}
+
+.ir-btn button:nth-of-type(4) {
+    background-image: url(https://i.pinimg.com/originals/7c/1d/af/7c1daf5d1bd7ab237a2bb5f75a556ed8.jpg);
+}
+
+.more-info {
+    background-image: url('https://www.rollpallet.co.uk/wp-content/uploads/2020/09/uk-logistics-industry.jpg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.more-info-title {
+    padding: 2rem;
+}
+
+.more-info-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more-nav button {
+    background-color: rgba(246, 241, 241, 0.8);
+    ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    margin: 1rem;
+    flex-basis: 33.33%;
+    border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.more-nav button:hover {
+    color: var(--mainColor);
+    background-color: var(--textColor);
+}
+
 @media only screen and (max-width: 1024px) {
     .ir-ctn {
         display: grid;
-    }
-
-    .chart {
-        /* display: none; */
     }
 
     .more-info-nav {
