@@ -12,6 +12,10 @@ export default function InvestorRelation() {
     const navigate = useNavigate()
     const [modal, setModal] = useState(false)
 
+    const navigateFinanceGraph = () => {
+        navigate('/investor-relation-ncl/finance-graph')
+    }
+
     const navigateShareholder = () => {
         navigate('/investor-relation-ncl/shareholder-information')
     }
@@ -47,7 +51,7 @@ export default function InvestorRelation() {
             <NavBar />
             <div className='ir-ctn'>
                 <div className='ir-btn'>
-                    <button>financial highlight</button>
+                    <button onClick={navigateFinanceGraph}>financial highlight</button>
                     <button>financial statement</button>
                     <button>management discussion and analysis</button>
                     <button onClick={navigateCalendar}>IR Calendar</button>

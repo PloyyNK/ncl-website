@@ -1,0 +1,29 @@
+.chart {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #eeeeeec0;
+    border-radius: 30px;
+    width: fit-content;
+    box-shadow: 25px 25px  15px rgba(0, 0, 0, 0.2);
+}
+
+.pie-ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.pie-ctn div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #eeeeeec0;
+    border-radius: 30px;
+    width: fit-content;
+    box-shadow: 25px 25px  15px rgba(0, 0, 0, 0.2);
+
+}

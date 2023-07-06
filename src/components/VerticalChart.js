@@ -7,7 +7,6 @@ import {
     Title,
     Tooltip,
     Legend,
-    scales,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import '../styles/InvestorRelation.css'
@@ -49,34 +48,26 @@ export const options = {
     }
 };
 
-const labels = ['2020', '2021', '2022'];
+const labels = [2017, 2018, 2019, 2020, 2021, 2022]
 
-export const income = {
-    labels,
-    datasets: [
-        {
-            label: 'Sales and service income',
-            data: [883.95, 1892.80, 1903.59],
-            backgroundColor: '#29335c',
-        }
-    ],
-};
 
 export const net = {
     labels,
     datasets: [
         {
-            labels: 'Net Profit',
-            data: [24.23, 112.73, 5.91],
+            labels: 'Revenue',
+            data: [988585339,1220322900,1308878765,917155195,1923897271,1938921828],
             backgroundColor: '#29335c',
+        }, 
+        {
+            labels: 'Profit', 
+            data: [-8891541,1427764,11672276,-24233931,112728113,-5905039], 
+            backgroundColor: '#5767aa',
         }
     ]
 }
 
-export function Chart({ dataType }) {
-    if (dataType === 'income') {
-        return <Bar className='bar-chart' options={{ ...options, responsive: true, maintainAspectRatio: false }} data={income} width={600} height={390} />
-    } else {
-        return <Bar className='bar-chart' options={{ ...options, responsive: true, maintainAspectRatio: false }} data={net} width={600} height={390} />
-    }
+export function Chart() {
+    return <Bar className='bar-chart' options={{ ...options, responsive: true, maintainAspectRatio: false }} data={net} width={600} height={390} />
+
 }
