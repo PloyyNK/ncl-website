@@ -52,11 +52,11 @@ export default function NewsEvents() {
 
             <div className='stock-clipping-news'>
                 <div className='stock-news'>
-                    <h1>Stock Marget News</h1>
+                    <h1 className='font-bold text-lg'>Stock Marget News</h1>
                     <NewsStock />
                 </div>
                 <div className='clipping-news'>
-                    <h1>News Clipping</h1>
+                    <h1 className='font-bold text-lg'>News Clipping</h1>
                     <NewsClipping />
                 </div>
             </div>
