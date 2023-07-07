@@ -38,8 +38,7 @@ export default function NewsStock() {
                             <>
                                 <tr>
                                     <td>{stock.date}</td>
-                                    <td>{stock.title}</td>
-                                    <td><a href={stock.link}>Download</a></td>
+                                    <td><a href={stock.link} className='hover:text-rose-900 ml-8'>{stock.title}</a></td>
                                 </tr>
                             </>
                         ))}
