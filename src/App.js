@@ -6,7 +6,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
 import Business from './pages/Business'
 import GoodGovernance from './pages/GoodGovernance'
@@ -20,6 +19,8 @@ import Shareholder from './pages/Shareholder';
 import ShareholderDetails from './pages/ShareholderDatails';
 import IRCalendar from './pages/IRCalendar';
 import FinanceGraph from './pages/FinanceGraph';
+import FinancialStatement from './pages/FinancialStatement';
+import Analysis from './pages/Analysis';
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
         <Route path='/investor-relation-ncl' element={<InvestorRelation />} />
         <Route path='/investor-relation-ncl/ir-calendar' element={<IRCalendar />} />
         <Route path='/investor-relation-ncl/finance-graph' element={<FinanceGraph />} />
+        <Route path='/investor-relation-ncl/financial-statement' element={<FinancialStatement />} />
+        <Route path='/investor-relation-ncl/management-discussion-analysis' element={<Analysis />} />
         <Route path='/investor-relation-ncl/shareholder-information' element={<Shareholder />} />
         <Route path='/investor-relation-ncl/shareholder-information/:name' element={<ShareholderDetails />} />
         <Route path='/news-events-ncl' element={<NewsEvents />} />

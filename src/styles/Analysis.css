@@ -1,0 +1,15 @@
+.analysis-ctn a{
+    display: grid;
+    background-color: #dbdbdb;
+    width: fit-content;
+    padding: 10px 2rem;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.analysis-ctn a:hover {
+    font-size: larger;
+    transition: 0.5s;
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--mainColor);
+}

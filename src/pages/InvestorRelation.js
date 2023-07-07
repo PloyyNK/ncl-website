@@ -3,7 +3,6 @@ import Footer from '../components/Footer'
 import Transitions from '../components/Transition'
 import irNews from '../data/irNews-data'
 import '../styles/InvestorRelation.css'
-import { Chart } from '../components/VerticalChart'
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
 
@@ -22,6 +21,14 @@ export default function InvestorRelation() {
 
     const navigateCalendar = () => {
         navigate('/investor-relation-ncl/ir-calendar')
+    }
+
+    const navigateStatement = () => {
+        navigate('/investor-relation-ncl/financial-statement')
+    }
+
+    const navigateAnalysis = () => {
+        navigate('/investor-relation-ncl/management-discussion-analysis')
     }
 
     const navigateAnnual = () => {
@@ -51,22 +58,11 @@ export default function InvestorRelation() {
             <NavBar />
             <div className='ir-ctn'>
                 <div className='ir-btn'>
-                    <button onClick={navigateFinanceGraph}>financial highlight</button>
-                    <button>financial statement</button>
-                    <button>management discussion and analysis</button>
+                    <button onClick={navigateFinanceGraph}>Financial highlight</button>
+                    <button onClick={navigateStatement}>Financial statement</button>
+                    <button onClick={navigateAnalysis}>Management discussion and analysis</button>
                     <button onClick={navigateCalendar}>IR Calendar</button>
                 </div>
-                {/* <div className='chart-btn'>
-                        <div className='btn'>
-                            <button onClick={() => {
-                                setDataType('income')
-                            }}>Sales and service income</button>
-                            <button onClick={() => {
-                                setDataType('net')
-                            }}>Net Profit</button>
-                        </div>
-                        <div className='chart'><Chart dataType={dataType} /></div>
-                    </div> */}
                 <div className='news-alert-ctn'>
                     <h2 className='font-bold'>Investor Relations News</h2>
                     <div className='news-alert'>
