@@ -78,6 +78,11 @@
     object-fit: cover;
 }
 
+.service-card-ctn img {
+    width: 250px;
+    margin-right: 2rem;
+}
+
 @media only screen and (max-width: 1024px) {
     .business-ctn {
         display: grid;
