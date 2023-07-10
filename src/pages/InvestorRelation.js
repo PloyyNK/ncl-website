@@ -24,7 +24,7 @@ export default function InvestorRelation() {
     }
 
     const navigateStatement = () => {
-        navigate('/investor-relation-ncl/financial-statement')
+        window.location.href = ('https://www.settrade.com/th/equities/quote/ncl/overview')
     }
 
     const navigateAnalysis = () => {
@@ -40,7 +40,7 @@ export default function InvestorRelation() {
     }
 
     const navigateAnalyst = () => {
-        window.location.href = ('https://www.nclthailand.com/investor_44.html')
+        navigate('/investor-relation-ncl/analyst-report')
     }
 
     const toggleModal = () => {
@@ -77,9 +77,6 @@ export default function InvestorRelation() {
                         <a href='/news-events-ncl' className='hover:text-red-700'>Read more...</a>
                     </div>
                 </div>
-            </div>
-            <div className='stock-info-ctn'>
-                    <a href='https://www.settrade.com/th/equities/quote/ncl/overview'>Stock Information</a>
             </div>
             <div className='more-info'>
                 <h4 className='font-bold text-center text-3xl more-info-title'>More Information</h4>

@@ -19,7 +19,7 @@ import Shareholder from './pages/Shareholder';
 import ShareholderDetails from './pages/ShareholderDatails';
 import IRCalendar from './pages/IRCalendar';
 import FinanceGraph from './pages/FinanceGraph';
-import FinancialStatement from './pages/FinancialStatement';
+import MDandA from './pages/FinancialStatement';
 import Analysis from './pages/Analysis';
 
 function App() {
@@ -34,8 +34,8 @@ function App() {
         <Route path='/investor-relation-ncl' element={<InvestorRelation />} />
         <Route path='/investor-relation-ncl/ir-calendar' element={<IRCalendar />} />
         <Route path='/investor-relation-ncl/finance-graph' element={<FinanceGraph />} />
-        <Route path='/investor-relation-ncl/financial-statement' element={<FinancialStatement />} />
-        <Route path='/investor-relation-ncl/management-discussion-analysis' element={<Analysis />} />
+        <Route path='/investor-relation-ncl/management-discussion-analysis' element={<MDandA />} />
+        <Route path='/investor-relation-ncl/analyst-report' element={<Analysis />} />
         <Route path='/investor-relation-ncl/shareholder-information' element={<Shareholder />} />
         <Route path='/investor-relation-ncl/shareholder-information/:name' element={<ShareholderDetails />} />
         <Route path='/news-events-ncl' element={<NewsEvents />} />
