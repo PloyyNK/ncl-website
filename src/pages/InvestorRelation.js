@@ -5,6 +5,7 @@ import irNews from '../data/irNews-data'
 import '../styles/InvestorRelation.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
+import StockInfo from '../components/StockInfo'
 
 export default function InvestorRelation() {
 
@@ -56,6 +57,10 @@ export default function InvestorRelation() {
     return (
         <Transitions>
             <NavBar />
+            <div className='ncl-stock'>
+                {/* <embed src='https://www.set.or.th/th/market/product/stock/quote/NCL/price' /> */}
+                <StockInfo />
+            </div>
             <div className='ir-ctn'>
                 <div className='ir-btn'>
                     <button onClick={navigateFinanceGraph}>Financial highlight</button>
