@@ -1,6 +1,15 @@
 # NCL Website
 This project is made for NCL International Logistics Public Company Limited.
 
+## Prerequisite 
+- Git install https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- nodeJS and npm install on your local machine
+
+nodeJS https://nodejs.org/en
+
+npm https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+
+
 ## How to run this project
 0. In case you open this project on Github, clone this project into your chosen directory
 
