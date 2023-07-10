@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import '../styles/Loading.css'
+import '../styles/StockInfo.css'
 
 export default function StockInfo() {
     const [info, setInfo] = useState(null)
@@ -15,29 +17,36 @@ export default function StockInfo() {
 
     return (
         <>
-            <div>
-                <h1>Stock Info</h1>
-            </div>
-            { }
             {
                 loading ? (
-                    <p>Loading..</p>
+                    <div className="load-ctn">
+                        <div class="lds-ring">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
                 ) : (
                     info && (
-                        <div>
-                            <div>
-                                <div>
+                        <div className="stock-info-ctn">
+                            <div className="price-name">
+                                <div className="stock-name">
                                     <h2 className="font-bold text-6xl">{info.name}</h2>
-                                    <p>NCL INTERNATIONAL LOGISTICS PUBLIC COMPANY LIMITED</p>
+                                    <p className="text-sm">NCL INTERNATIONAL LOGISTICS PUBLIC COMPANY LIMITED</p>
                                 </div>
-                                <p>Price: {info.price}</p>
+                                <div className="stock-price">
+                                    <p>Price: {info.price}</p>
+                                    <p>Change: {info.change}</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>Change: {info.change}</p>
+                            <div className="stock-info">
                                 <p>Status: {info.status}</p>
-                                <p>Times: {info.times}</p>
+                                <p>Highest: {info.highest}</p>
+                                <p>Lowest: {info.lowest}</p>
+                                <p>Latest update: {info.times}</p>
                             </div>
-
                         </div>
                     )
                 )

@@ -1,0 +1,31 @@
+.stock-info-ctn {
+    padding: 2rem;
+    display: grid;
+}
+
+.price-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.stock-info {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1024px) {
+    .stock-info-ctn {
+        display: grid;
+        padding: 1rem;
+    }
+
+    .price-name {
+        display: grid;
+    }
+    
+    .stock-info {
+        display: grid;
+    }
+}

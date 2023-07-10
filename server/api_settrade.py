@@ -32,6 +32,8 @@ def get_info():
         "price": price,
         "change": change,
         "change2": change2,
+        "highest": highest,
+        "lowest": lowest,
         "status": status,
         "times": times
     }
