@@ -25,6 +25,15 @@ After run the above, you should be able to access the website on localhost by us
 
 ```npm start```
 
+## How to run API
+
+1. open terminal and get into server folder
+2. run the following command
+
+```
+flask --app api_settrade run
+```
+
 ## More Information 
 ### Advanced Configuration
 
