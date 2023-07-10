@@ -19,8 +19,6 @@ npm https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 ```cd [your path to this project] ```
 
-``` cd frontend ```
-
 ```npm i```  to install al the package from this project
 
 After run the above, you should be able to access the website on localhost by use the following command line in the same terminal
