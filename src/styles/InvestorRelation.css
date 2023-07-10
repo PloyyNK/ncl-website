@@ -205,6 +205,33 @@
     background-color: var(--textColor);
 }
 
+.stock-info-ctn {
+    background: linear-gradient(89deg,
+            rgba(255, 255, 255, 1) 4%,
+            rgb(21, 33, 100) 51%,
+            rgba(255, 255, 255, 1) 96%);
+    color: var(--mainColor);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.stock-info-ctn a {
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 2rem;
+}
+
+.stock-info-ctn a:hover {
+    font-size: 35px;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
 @media only screen and (max-width: 1024px) {
     .ir-ctn {
         display: grid;

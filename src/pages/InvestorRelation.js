@@ -78,6 +78,9 @@ export default function InvestorRelation() {
                     </div>
                 </div>
             </div>
+            <div className='stock-info-ctn'>
+                    <a href='https://www.settrade.com/th/equities/quote/ncl/overview'>Stock Information</a>
+            </div>
             <div className='more-info'>
                 <h4 className='font-bold text-center text-3xl more-info-title'>More Information</h4>
                 <div className='more-nav'>

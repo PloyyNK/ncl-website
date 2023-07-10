@@ -8,9 +8,10 @@ export default function Structure() {
                     </div>
                     <div class="content">
                         <div>
-                            <h2>Company Structure</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
-                            </p>
+                            <a
+                                href="https://www.nclthailand.com/uploads/upfiles/images/%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%B7%E0%B8%AD%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%20%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B8%8B%E0%B8%B5%E0%B9%81%E0%B8%AD%E0%B8%A5%20EN%2006-2023_00.png">
+                                Company Structure
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -20,9 +21,10 @@ export default function Structure() {
                     </div>
                     <div class="content">
                         <div>
-                            <h2>Organization Chart</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
-                            </p>
+                            <a
+                                href="https://www.nclthailand.com/uploads/upfiles/images/Organization%20Chart%20EN_00.png">
+                                Organization Chart
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import '../styles/InvestorRelation.css'
+import { TrashIcon } from '@heroicons/react/solid';
 
 ChartJS.register(
     CategoryScale,
@@ -28,8 +29,8 @@ export const options = {
             display: false
         },
         title: {
-            display: false,
-            text: 'The Consolidated Financial Statement',
+            display: true,
+            text: 'Total Revenue',
         },
     },
     scales: {
@@ -45,6 +46,10 @@ export const options = {
                 display: true
             }
         }
+    }, 
+    title: {
+        display: true, 
+        text: 'Annual Income and Profit'
     }
 };
 
@@ -62,7 +67,7 @@ export const net = {
         {
             labels: 'Profit', 
             data: [-8891541,1427764,11672276,-24233931,112728113,-5905039], 
-            backgroundColor: '#5767aa',
+            backgroundColor: '#FFCD01',
         }
     ]
 }

@@ -83,6 +83,16 @@
     margin-right: 2rem;
 }
 
+.title-line {
+    display: flex;
+}
+
+.line-text {
+    border-bottom: 2px solid var(--textColor);
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
 @media only screen and (max-width: 1024px) {
     .business-ctn {
         display: grid;

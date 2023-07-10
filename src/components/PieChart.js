@@ -4,6 +4,30 @@ import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+export const optionsRev = {
+    plugins: {
+        legend: {
+            display: true
+        },
+        title: {
+            display: true,
+            text: 'Revenue of Each Service',
+        },
+    },
+}
+
+export const optionsAll = {
+    plugins: {
+        legend: {
+            display: true
+        },
+        title: {
+            display: true,
+            text: 'Service and Sales Income',
+        },
+    },
+}
+
 const dataRev = {
     labels: ['sea freight', 'air freight', 'land freight', 'other service'],
     datasets: [
@@ -43,14 +67,14 @@ export default function PieChart({ data }) {
     if (data === 'dataAll') {
         return (
             <>
-                <Doughnut className='bar-chart' options={{ responsive: true, maintainAspectRatio: false }} data={dataAll} width={600} height={390} />
+                <Doughnut className='bar-chart' options={{...optionsAll, responsive: true, maintainAspectRatio: false }} data={dataAll} width={600} height={390} />
             </>
         )
     }
     else {
         return(
             <>
-                <Doughnut className='bar-chart' options={{ responsive: true, maintainAspectRatio: false }} data={dataRev} width={600} height={390} />
+                <Doughnut className='bar-chart' options={{...optionsRev, responsive: true, maintainAspectRatio: false }} data={dataRev} width={600} height={390} />
             </>
         )
     }
