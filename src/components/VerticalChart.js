@@ -9,8 +9,8 @@ import {
     Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import '../styles/InvestorRelation.css'
-import { TrashIcon } from '@heroicons/react/solid';
 
 ChartJS.register(
     CategoryScale,
@@ -21,58 +21,75 @@ ChartJS.register(
     Legend
 );
 
-export const options = {
+ChartJS.defaults.plugins.legend.display = true;
+ChartJS.defaults.plugins.title.display = true;
+
+const options = {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-        legend: {
-            display: false
-        },
         title: {
-            display: true,
-            text: 'Total Revenue',
+            text: 'Total Revenue and Profit',
+        },
+        tooltip: {
+            enabled: true,
+        },
+        datalabels: {
+            anchor: 'end',
+            align: 'top',
+            offset: 4,
+            color: '#29335c',
+            font: {
+                weight: 'bold',
+            },
+            formatter: (value) => {
+                const formattedValue = (value / 1000000000).toFixed(2);
+                return `${formattedValue}`;
+            },
         },
     },
     scales: {
         x: {
             title: {
-                text: "Year",
-                display: true
-            }
+                text: 'Year',
+                display: true,
+            },
         },
         y: {
-            title: {
-                text: "Unit: Million Bath",
-                display: true
-            }
-        }
-    }, 
+            display: false,
+        },
+    },
     title: {
-        display: true, 
-        text: 'Annual Income and Profit'
-    }
+        display: true,
+        text: 'Annual Income and Profit',
+    },
 };
 
-const labels = [2017, 2018, 2019, 2020, 2021, 2022]
-
-
-export const net = {
-    labels,
+const data = {
+    labels: [2017, 2018, 2019, 2020, 2021, 2022],
     datasets: [
         {
-            labels: 'Revenue',
-            data: [988585339,1220322900,1308878765,917155195,1923897271,1938921828],
+            label: 'Revenue',
+            data: [988585339, 1220322900, 1308878765, 917155195, 1923897271, 1938921828],
             backgroundColor: '#29335c',
-        }, 
+        },
         {
-            labels: 'Profit', 
-            data: [-8891541,1427764,11672276,-24233931,112728113,-5905039], 
+            label: 'Profit',
+            data: [-8891541, 1427764, 11672276, -24233931, 112728113, -5905039],
             backgroundColor: '#FFCD01',
-        }
-    ]
-}
+        },
+    ],
+};
+
+const plugins = [ChartDataLabels];
 
 export function Chart() {
-    return <Bar className='bar-chart' options={{ ...options, responsive: true, maintainAspectRatio: false }} data={net} width={600} height={390} />
+    return <Bar
+        className='bar-chart'
+        options={{ ...options, responsive: true, maintainAspectRatio: false }}
+        plugins={plugins}
+        data={data}
+        width={600}
+        height={390} />
 
 }
