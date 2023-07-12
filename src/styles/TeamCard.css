@@ -7,6 +7,8 @@
     background: #e0e0e0;
     box-shadow: 15px 15px 30px #898989,
         -15px -15px 30px #ffffff;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .team-card-ctn {

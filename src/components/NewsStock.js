@@ -32,18 +32,14 @@ export default function NewsStock() {
                 </select>
             </div>
             <div className='stock-news-table-ctn'>
-                <table className='stock-news-table'>
-                    <tbody>
-                        {clippingNews.map((stock) => (
-                            <>
-                                <tr>
-                                    <td>{stock.date}</td>
-                                    <td><a href={stock.link} className='hover:text-rose-900 ml-8'>{stock.title}</a></td>
-                                </tr>
-                            </>
-                        ))}
-                    </tbody>
-                </table>
+                <div className='stock-news-table'>
+                    {clippingNews.map((stock) => (
+                        <>
+                            <p>{stock.date}
+                                <a href={stock.link} className='hover:text-rose-900 ml-8'>{stock.title}</a></p>
+                        </>
+                    ))}
+                </div>
             </div>
         </>
 

@@ -5,7 +5,7 @@ export default function IntroCom() {
     return (
         <div className="intro-ctn">
             <div className="intro-description intro-content">
-                <h1>Meet Our Company</h1>
+                <h1 className='font-bold text-3xl'>Meet Our Company</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nunc non felis vulputate, lobortis ante id, tristique ex.
                     Nunc augue ligula, posuere at magna et, lobortis finibus

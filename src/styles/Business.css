@@ -70,12 +70,13 @@
 .partners-logo {
     margin-top: 2rem;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .partners-logo img {
     margin: 2rem;
     width: 225px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .service-card-ctn img {

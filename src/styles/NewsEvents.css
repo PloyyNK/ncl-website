@@ -23,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 3rem 7rem;
+    justify-content: space-evenly;
 }
 
 .clipping-news {
