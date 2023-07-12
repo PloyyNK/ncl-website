@@ -37,14 +37,14 @@ export default function StockInfo() {
                                     <p className="text-sm">NCL INTERNATIONAL LOGISTICS PUBLIC COMPANY LIMITED</p>
                                 </div>
                                 <div className="stock-price">
-                                    <p>Price: {info.price}</p>
-                                    <p>Change: {info.change}</p>
+                                    <p className="text-5xl font-bold">{info.price}</p>
+                                    <p>{info.change} {info.change2}</p>
                                 </div>
                             </div>
                             <div className="stock-info">
                                 <p>Status: {info.status}</p>
-                                <p>Highest: {info.highest}</p>
-                                <p>Lowest: {info.lowest}</p>
+                                <p className="text-green-600 font-bold">Highest: {info.highest}</p>
+                                <p className="text-red-600 font-bold">Lowest: {info.lowest}</p>
                                 <p>Latest update: {info.times}</p>
                             </div>
                         </div>

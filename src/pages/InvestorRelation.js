@@ -25,7 +25,7 @@ export default function InvestorRelation() {
     }
 
     const navigateStatement = () => {
-        window.location.href = ('https://www.settrade.com/th/equities/quote/ncl/overview')
+        window.location.href = ('https://www.set.or.th/en/market/product/stock/quote/ncl/factsheet')
     }
 
     const navigateAnalysis = () => {
@@ -58,7 +58,6 @@ export default function InvestorRelation() {
         <Transitions>
             <NavBar />
             <div className='ncl-stock'>
-                {/* <embed src='https://www.set.or.th/th/market/product/stock/quote/NCL/price' /> */}
                 <StockInfo />
             </div>
             <div className='ir-ctn'>
