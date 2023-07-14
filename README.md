@@ -13,17 +13,26 @@ npm https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 ## How to run this project
 0. In case you open this project on Github, clone this project into your chosen directory
 
-``` git clone https://github.com/PloyyNK/ncl-website.git ```
+``` 
+git clone https://github.com/PloyyNK/ncl-website.git
+ ```
 
 1. After you have this project on your local machine, open new terminal and run the following command line:
 
-```cd [your path to this project] ```
+```
+cd [your path to this project] 
+```
 
-```npm i```  to install al the package from this project
+```
+npm i
+```  
+to install al the package from this project
 
 After run the above, you should be able to access the website on localhost by use the following command line in the same terminal
 
-```npm start```
+```
+npm start
+```
 
 ## How to run API
 
