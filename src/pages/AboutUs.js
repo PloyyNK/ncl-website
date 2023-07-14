@@ -49,6 +49,7 @@ export default function AboutUs() {
                     <button onClick={() => setAbout("timeline")}>Timeline</button>
                 </div>
 
+                {/* rendered component */}
                 <div>
                     {
                         aboutComponent.filter((data) =>
