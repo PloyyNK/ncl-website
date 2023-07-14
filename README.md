@@ -9,6 +9,8 @@ nodeJS https://nodejs.org/en
 
 npm https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
+- Python 3 and up 
+- Flask
 
 ## How to run this project
 0. In case you open this project on Github, clone this project into your chosen directory
