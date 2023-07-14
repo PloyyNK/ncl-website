@@ -27,7 +27,7 @@ After run the above, you should be able to access the website on localhost by us
 
 ## How to run API
 
-1. open terminal and get into server folder
+1. open terminal and go into server folder
 2. run the following command
 
 ```
