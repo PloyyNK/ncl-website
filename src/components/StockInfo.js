@@ -42,17 +42,15 @@ export default function StockInfo() {
                                 </div>
                             </div>
                             <div className="stock-info">
-                                <p>Status: {info.status}</p>
-                                <p className="text-green-600 font-bold">Highest: {info.highest}</p>
-                                <p className="text-red-600 font-bold">Lowest: {info.lowest}</p>
+                                <p>Market Status: <strong>{info.status}</strong></p>
+                                <p className="text-green-600">Highest: <strong>{info.highest}</strong></p>
+                                <p className="text-red-600">Lowest: <strong>{info.lowest}</strong></p>
                                 <p>Latest update: {info.times}</p>
                             </div>
                         </div>
                     )
                 )
             }
-
-
         </>
     )
 }
