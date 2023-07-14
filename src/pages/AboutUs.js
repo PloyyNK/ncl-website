@@ -20,6 +20,7 @@ export default function AboutUs() {
         setBoard(newBoard);
     };
 
+    // function for render component when click button
     const renderComponent = (name) => {
         switch (name) {
             case 'history':

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import clippingNews from './clipping-news-data'
+import clippingNews from '../data/clipping-news-data'
 import '../styles/StockNews.css'
 import { useState } from 'react'
 
